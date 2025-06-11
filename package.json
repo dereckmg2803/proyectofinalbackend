@@ -1,0 +1,59 @@
+{
+  "name": "proyectofinalbackend",
+  "version": "1.0.0",
+  "description": "proyecto final de backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node dist/app.js",
+    "start:dev": "tsnd --respawn src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dereckmg2803/proyectofinalbackend.git"
+  },
+  "keywords": [
+    "backend",
+    "node",
+    "brcrypt",
+    "express",
+    "postgreSQL"
+  ],
+  "author": "Dereck Montes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dereckmg2803/proyectofinalbackend/issues"
+  },
+  "homepage": "https://github.com/dereckmg2803/proyectofinalbackend#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "env-var": "^7.5.0",
+    "express": "4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^7.0.3",
+    "pg": "^8.16.0",
+    "pug": "^3.0.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.24",
+    "zod": "^3.25.56"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
+    "@types/express": "4.17.21",
+    "@types/hpp": "^0.2.6",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.15.30",
+    "@types/nodemailer": "^6.4.17",
+    "@types/pug": "^2.0.10",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
