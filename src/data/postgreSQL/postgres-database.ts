@@ -69,9 +69,13 @@ export class PostgresDatabase {
   async connect() {
     try {
       await this.datasource.initialize();
-      console.log('Postgres database connected!');
     } catch (error) {
       console.error(error);
     }
+
+
   }
+
+
 }
+

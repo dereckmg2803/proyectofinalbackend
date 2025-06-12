@@ -20,7 +20,7 @@ export class Transaction extends BaseEntity {
   receiver!: User;
 
   @Column('decimal', { precision: 10, scale: 2, nullable: false })
-  amount!: string;
+  amount!: number;
 
   @CreateDateColumn()
   createdAt!: Date;
